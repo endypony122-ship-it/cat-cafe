@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>喫茶 猫葉庵 | 猫のいる静かなレトロ喫茶</title>
+    <!-- 全ページ共通のJavaScript -->
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダーエリア -->
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="./index.html">喫茶 猫葉庵</a>
+        </h1>
+
+        <!-- ハンバーガーボタン -->
+        <button
+          class="header__menu-btn"
+          id="js-menu-btn"
+          aria-label="メニューを開く"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- ナビゲーション -->
+        <nav class="header__nav" id="js-nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a
+                href="./index.html"
+                class="header__nav-link header__nav-link--current"
+                >ホーム</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="./menu.html" class="header__nav-link">お品書き</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./contact.html" class="header__nav-link"
+                >懐（お問合せ）</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- メインビジュアル -->
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__lead">珈琲の香りと、気まぐれな店員たち。</p>
+          <h2 class="hero__title">猫のいる、静かな時間。</h2>
+        </div>
+      </section>
+
+      <!-- コンセプトセクション -->
+      <section class="concept">
+        <div class="concept__inner">
+          <h3 class="concept__title">当庵について</h3>
+          <p class="concept__text">
+            扉を開けると、カチコチと響く柱時計の音と、香ばしい珈琲の香り。<br />
+            「喫茶
+            猫葉庵」は、賑やかな猫カフェではなく、猫たちが自然と暮らす静かな古民家風の喫茶店です。
+          </p>
+          <p class="concept__text">
+            本を読んだり、作業をしたり、ただぼーっと過ごしたり。<br />
+            足元をすり抜ける小さな店員たちと一緒に、ゆったりとした贅沢な時間をお過ごしください。
+          </p>
+        </div>
+      </section>
+
+      <!-- 猫たちの紹介セクション -->
+      <section class="cats-intro">
+        <div class="cats-intro__inner">
+          <h3 class="cats-intro__title">猫店員のご紹介</h3>
+          <p class="cats-intro__lead">本日の出勤メンバー</p>
+
+          <div class="cats-intro__grid">
+            <article class="cat-card js-fade-target">
+              <div class="cat-card__img-wrapper">
+                <img
+                  src="./public/img/cat-master.jpg"
+                  alt="三毛猫の「千代代」"
+                  class="cat-card__img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+              </div>
+              <div class="cat-card__body">
+                <span class="cat-card__role">店長</span>
+                <h4 class="cat-card__name">千代代（ちよよ）</h4>
+                <p class="cat-card__desc">
+                  どっしりと構えた三毛猫。レジ横の座布団が定位置で、お客様のお会計を見守るのが仕事。
+                </p>
+              </div>
+            </article>
+
+            <article class="cat-card js-fade-target">
+              <div class="cat-card__img-wrapper">
+                <img
+                  src="./public/img/cat-barista.jpg"
+                  alt="黒猫の「墨丸」"
+                  class="cat-card__img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+              </div>
+              <div class="cat-card__body">
+                <span class="cat-card__role">給仕頭</span>
+                <h4 class="cat-card__name">墨丸（すみまる）</h4>
+                <p class="cat-card__desc">
+                  艶やかな黒猫。サイフォンで珈琲を淹れるマスターの隣で、じっと泡を見つめるのが日課。
+                </p>
+              </div>
+            </article>
+
+            <article class="cat-card js-fade-target">
+              <div class="cat-card__img-wrapper">
+                <img
+                  src="./public/img/cat-sleepy.jpg"
+                  alt="キジトラの「きなこ」"
+                  class="cat-card__img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+              </div>
+              <div class="cat-card__body">
+                <span class="cat-card__role">見習い</span>
+                <h4 class="cat-card__name">きなこ</h4>
+                <p class="cat-card__desc">
+                  いつも居眠りばかりしているキジトラ。膝の上に乗ってくる確率が最も高い営業担当。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- お知らせセクション -->
+      <section class="news">
+        <div class="news__inner">
+          <h3 class="news__title">瓦版（お知らせ）</h3>
+          <ul class="news__list">
+            <li class="news__item">
+              <time class="news__date" datetime="2026-07-20">2026.07.20</time>
+              <span class="news__category news__category--event">催し</span>
+              <a href="#" class="news__link"
+                >季節限定「冷やし白玉小豆と水出し珈琲」の提供を開始しました。</a
+              >
+            </li>
+            <li class="news__item">
+              <time class="news__date" datetime="2026-07-10">2026.07.10</time>
+              <span class="news__category news__category--notice">告知</span>
+              <a href="#" class="news__link"
+                >今月の猫店員たちの定期検診に伴う短縮営業日のお知らせ。</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッターエリア -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__info">
+          〒000-0000 某所緑林町 2-2-2 / 営業時間：11:00〜19:00（水曜定休）
+        </p>
+        <p class="footer__copyright">
+          &copy; 2026 喫茶 猫葉庵. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

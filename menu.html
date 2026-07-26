@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お品書き | 喫茶 猫葉庵</title>
+    <!-- 全ページ共通のJavaScript -->
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダーエリア -->
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="./index.html">喫茶 猫葉庵</a>
+        </h1>
+
+        <button
+          class="header__menu-btn"
+          id="js-menu-btn"
+          aria-label="メニューを開く"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="header__nav" id="js-nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="./index.html" class="header__nav-link">ホーム</a>
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="./menu.html"
+                class="header__nav-link header__nav-link--current"
+                >お品書き</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="./contact.html" class="header__nav-link"
+                >懐（お問合せ）</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ページタイトル -->
+      <section class="page-title">
+        <div class="page-title__inner">
+          <h2 class="page-title__main">お品書き</h2>
+          <p class="page-title__sub">
+            当庵がこだわり抜いた珈琲と、素朴な甘味。
+          </p>
+        </div>
+      </section>
+
+      <!-- メニューコンテンツエリア -->
+      <section class="menu-content">
+        <div class="menu-content__inner">
+          <!-- カテゴリ切り替えタブ -->
+          <div class="menu-tabs">
+            <button class="menu-tabs__btn is-active" data-category="all">
+              すべて
+            </button>
+            <button class="menu-tabs__btn" data-category="drink">
+              お飲み物
+            </button>
+            <button class="menu-tabs__btn" data-category="sweet">甘味</button>
+            <button class="menu-tabs__btn" data-category="food">軽食</button>
+          </div>
+
+          <!-- メニュー一覧 -->
+          <div class="menu-grid">
+            <article class="menu-item" data-item-category="drink">
+              <div class="menu-item__img-wrapper">
+                <div class="menu-item__dummy-img"></div>
+              </div>
+              <div class="menu-item__body">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name">猫葉庵ブレンド</h3>
+                  <p class="menu-item__price">¥600</p>
+                </div>
+                <p class="menu-item__desc">
+                  ご注文を受けてからサイフォンで丁寧に淹れる深煎り珈琲。しっかりとした苦味とコクが特徴です。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item" data-item-category="drink">
+              <div class="menu-item__img-wrapper">
+                <div class="menu-item__dummy-img"></div>
+              </div>
+              <div class="menu-item__body">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name">水出し極み珈琲</h3>
+                  <p class="menu-item__price">¥650</p>
+                </div>
+                <p class="menu-item__desc">
+                  時間をかけてゆっくりと抽出した、雑味のないすっきりとした冷製珈琲。夏限定の一品です。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item" data-item-category="sweet">
+              <div class="menu-item__img-wrapper">
+                <div class="menu-item__dummy-img"></div>
+              </div>
+              <div class="menu-item__body">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name">手作り白玉小豆</h3>
+                  <p class="menu-item__price">¥550</p>
+                </div>
+                <p class="menu-item__desc">
+                  毎朝店内で練り上げるもちもちの白玉に、甘さ控えめの自家製小豆を添えた上品な甘味です。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item" data-item-category="sweet">
+              <div class="menu-item__img-wrapper">
+                <div class="menu-item__dummy-img"></div>
+              </div>
+              <div class="menu-item__body">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name">黒蜜きなこプリン</h3>
+                  <p class="menu-item__price">¥500</p>
+                </div>
+                <p class="menu-item__desc">
+                  濃厚な卵のコクを感じる和風プリン。特製の黒蜜と香ばしいききな粉をたっぷりとかけて。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item" data-item-category="food">
+              <div class="menu-item__img-wrapper">
+                <div class="menu-item__dummy-img"></div>
+              </div>
+              <div class="menu-item__body">
+                <div class="menu-item__header">
+                  <h3 class="menu-item__name">厚切り厚焼き玉子サンド</h3>
+                  <p class="menu-item__price">¥750</p>
+                </div>
+                <p class="menu-item__desc">
+                  出汁をたっぷりと含んだ熱々の厚焼き玉子を、ほんのりからしマヨネーズを塗ったパンで挟みました。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッターエリア -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__info">
+          〒000-0000 某所緑林町 2-2-2 / 営業時間：11:00〜19:00（水曜定休）
+        </p>
+        <p class="footer__copyright">
+          &copy; 2026 喫茶 猫葉庵. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

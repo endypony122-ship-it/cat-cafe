@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問合せ・ご予約 | 喫茶 猫葉庵</title>
+    <!-- 全ページ共通のJavaScript -->
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダーエリア -->
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="./index.html">喫茶 猫葉庵</a>
+        </h1>
+
+        <button
+          class="header__menu-btn"
+          id="js-menu-btn"
+          aria-label="メニューを開く"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="header__nav" id="js-nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="./index.html" class="header__nav-link">ホーム</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./menu.html" class="header__nav-link">お品書き</a>
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="./contact.html"
+                class="header__nav-link header__nav-link--current"
+                >懐（お問合せ）</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ページタイトル -->
+      <section class="page-title">
+        <div class="page-title__inner">
+          <h2 class="page-title__main">お問合せ・ご予約</h2>
+          <p class="page-title__sub">
+            催しのご予約、猫店員への質問など、お気軽にお寄せください。
+          </p>
+        </div>
+      </section>
+
+      <!-- フォームセクション -->
+      <section class="contact-content">
+        <div class="contact-content__inner">
+          <form class="form" id="js-form" novalidate>
+            <!-- お名前入力欄 -->
+            <div class="form__group">
+              <label for="name" class="form__label">
+                お名前 <span class="form__required">必須</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                class="form__input"
+                placeholder="猫葉 太郎"
+                required
+              />
+              <span class="form__error-text" id="name-error"></span>
+            </div>
+
+            <!-- メールアドレス入力欄 -->
+            <div class="form__group">
+              <label for="email" class="form__label">
+                文面送り先（メールアドレス）
+                <span class="form__required">必須</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                class="form__input"
+                placeholder="example@nyan.com"
+                required
+              />
+              <span class="form__error-text" id="email-error"></span>
+            </div>
+
+            <!-- 件名選択 -->
+            <div class="form__group">
+              <label for="subject" class="form__label">
+                件名 <span class="form__required">必須</span>
+              </label>
+              <div class="form__select-wrapper">
+                <select
+                  id="subject"
+                  class="form__input form__input--select"
+                  required
+                >
+                  <option value="" disabled selected>選択してください</option>
+                  <option value="reservation">お席・催しのご予約</option>
+                  <option value="question">当庵へのご質問</option>
+                  <option value="other">その他</option>
+                </select>
+              </div>
+              <span class="form__error-text" id="subject-error"></span>
+            </div>
+
+            <!-- 本文入力欄 -->
+            <div class="form__group">
+              <label for="message" class="form__label">
+                控書き（本文） <span class="form__required">必須</span>
+              </label>
+              <textarea
+                id="message"
+                class="form__input form__input--textarea"
+                rows="6"
+                placeholder="こちらにご用件をご記入ください"
+                required
+              ></textarea>
+              <span class="form__error-text" id="message-error"></span>
+            </div>
+
+            <!-- 送信ボタンエリア -->
+            <div class="form__submit-area">
+              <button
+                type="submit"
+                class="form__submit-btn"
+                id="js-submit-btn"
+                disabled
+              >
+                申し渡す（送信する）
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッターエリア -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__info">
+          〒000-0000 某所緑林町 2-2-2 / 営業時間：11:00〜19:00（水曜定休）
+        </p>
+        <p class="footer__copyright">
+          &copy; 2026 喫茶 猫葉庵. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

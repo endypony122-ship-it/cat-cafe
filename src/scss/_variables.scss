@@ -1,0 +1,25 @@
+// ==========================================================================
+// 変数定義（サイト全体のカラーパレット・フォント）
+// ==========================================================================
+
+// 基本カラー
+$color-bg: #fdfaf7; // 温かみのある古紙のような背景色
+$color-text: #2c2421; // 深い珈琲色
+$color-primary: #6f4e37; // ローストブラウン
+$color-accent: #8b4513; // アクセントの渋い茶色
+$color-white: #ffffff; // 白
+
+// セクション背景用の派生カラー
+$color-bg-hero: #efdfd4; // ヒーローセクション用
+$color-bg-sub: #f5efe9; // サブセクション用（猫紹介など）
+$color-bg-title: #eaddd3; // ページタイトル用（お品書きなど）
+$color-img-dummy: #e0d5cb; // ダミー画像用
+
+// フォーム・ステータス用カラー
+$color-error: #aa3a3a; // エラーテキスト・枠線
+$color-error-bg: #fff8f8; // エラー時の背景
+$color-disabled-bg: #cccccc; // 非活性ボタン背景
+$color-disabled-text: #888888; // 非活性ボタンテキスト
+
+// フォント
+$font-serif: "Shippori Mincho", "Yu Mincho", serif;
